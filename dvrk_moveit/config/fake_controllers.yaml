@@ -1,0 +1,10 @@
+controller_list:
+  - name: fake_psm1_arm_controller
+    joints:
+      - psm_yaw_joint
+      - psm_pitch_back_joint
+      - psm_main_insertion_joint
+      - psm_tool_roll_joint
+      - psm_tool_pitch_joint
+      - psm_tool_yaw_joint
+      - psm_tool_gripper2_joint

@@ -1,0 +1,286 @@
+/* -*- Mode: Javascript; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
+
+{
+    "arms":
+    [
+        {
+            "name": "ECM",
+            "type": "ECM",
+            "plug-number": 1,
+            "serial-number": "SE054269",
+            "brake-release-current": 1.5,
+            "primary-offsets": [ 0.03543, -2.3615, -3.0546, 6.1978, -3646.1, -2777.6],
+            "primary-scales": [ 0.0002537, 0.0010555, 0.0013536, -0.0013604, 0.8311, 0.6315],
+            "secondary-offsets": [ 0.01998, -2.3625, -3.0736, 6.2012, -13557, -1997.1],
+            "secondary-scales": [ 0.000257, 0.0010546, 0.0013604, -0.0013585, 3.0809, 0.45457],
+            "DH": {
+                "links": [
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.0896, "theta": 0.0000, "D": 0.0000,
+                        "type": "prismatic",
+                        "mode": "active",
+                        "offset": 0.00
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.0000, "theta": 0.0000, "D": 0.4166,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.0
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.4318, "theta": 0.0000, "D": 0.1429,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.00
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.4318, "theta": 0.0000, "D": -0.3459,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 1.5708
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": -0.7853, "A": 0.0000, "theta": 0.0000, "D": 0.0000,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 1.5708
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": -0.0667, "theta": 0.0000, "D": 0.0000,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.0000
+                    }
+                ]
+            },
+            "world-origin-to-suj": {
+                "Translation": [0.0000 , 0.0000, 0.4300],
+                "Rotation" : [[ 0.0000,  -1.0000,  0.0000],
+                              [1.0000,  0.0000,  0.0000],
+                              [ 0.0000,  0.0000,  1.0000]]
+            },
+            "suj-tip-to-tool-origin": {
+                "Translation": [0.6126, 0.0000,   0.1016],
+                "Rotation" : [[ 0.0000, 1.0000,  0.0000],
+                              [ -1.0000,  0.0000,  0.0000],
+                              [ 0.0000,  0.0000,  1.0000]]
+            }
+        }
+        ,
+        {
+            "name": "PSM1",
+            "type": "PSM",
+            "plug-number": 2,
+            "serial-number": "SE054268",
+            "brake-release-current": 2.2,
+            "primary-offsets": [ 0.09049, -2.3597, -3.0408, 3.0643, -3.0554, -3.0652],
+            "primary-scales": [ 0.00025411, 0.0010569, 0.0013517, -0.0013654, 0.00136, 0.0013629],
+            "secondary-offsets": [ 0.08947, -2.3606, -3.0595, 3.0681, -3.0627, -3.0612],
+            "secondary-scales": [ 0.00025418, 0.0010562, 0.0013585, -0.0013655, 0.0013667, 0.001362],
+            "DH": {
+                "links": [
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.0896, "theta": 0.0000, "D": 0.0000,
+                        "type": "prismatic",
+                        "mode": "active",
+                        "offset": 0.0
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.0000, "theta": 0.0000, "D": 0.4166,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.0
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.4318, "theta": 0.0000, "D": 0.1429,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.0
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.4318, "theta": 0.0000, "D": -0.1302,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 1.5708
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 1.5708, "A": 0.0000, "theta": 0.0000, "D": 0.4089,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.0
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": -1.5708, "A": 0.0000, "theta": 0.0000, "D": -0.1029,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": -1.5708
+                    }
+                ]
+            },
+            "world-origin-to-suj": {
+                "Translation": [-0.1016 , -0.1016, 0.4300],
+                "Rotation" : [[-1.0000,  0.0000,  0.0000],
+                              [ 0.0000, -1.0000,  0.0000],
+                              [ 0.0000,  0.0000,  1.0000]]
+            },
+            "suj-tip-to-tool-origin": {
+                "Translation": [0.4864, 0.0000, 0.1524],
+                "Rotation" : [[ 0.0000, 1.0000,  0.0000],
+                              [ -1.0000,  0.0000,  0.0000],
+                              [ 0.0000,  0.0000,  1.0000]]
+            }
+        }
+        ,
+        {
+            "name": "PSM2",
+            "type": "PSM",
+            "plug-number": 3,
+            "serial-number": "SE054270",
+            "brake-release-current": 2.2,
+            "primary-offsets": [ 0.09264, -2.3545, -3.07, 3.0563, -3.0682, -3.0492],
+            "primary-scales": [ 0.00025432, 0.0010505, 0.0013671, -0.0013632, 0.0013633, 0.0013603],
+            "secondary-offsets": [ 0.09049, -2.3675, -3.058, 3.0446, -3.0849, -3.073],
+            "secondary-scales": [ 0.00025438, 0.001056, 0.0013655, -0.001364, 0.0013703, 0.0013711],
+            "DH": {
+                "links": [
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.0896, "theta": 0.0000, "D": 0.0000,
+                        "type": "prismatic",
+                        "mode": "active",
+                        "offset": 0.00
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.0000, "theta": 0.0000, "D": 0.4166,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.0
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.4318, "theta": 0.0000, "D": 0.1429,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.00
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.4318, "theta": 0.0000, "D": -0.1302,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 1.5708
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 1.5708, "A": 0.0000, "theta": 0.0000, "D": 0.4089,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.00
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": -1.5708, "A": 0.0000, "theta": 0.0000, "D": -0.1029,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": -1.5708
+                    }
+                ]
+            },
+            "world-origin-to-suj": {
+                "Translation": [0.1016 , -0.1016, 0.4300],
+                "Rotation" : [[ 1.0000,  0.0000,  0.0000],
+                              [ 0.0000,  1.0000,  0.0000],
+                              [ 0.0000,  0.0000,  1.0000]]
+            },
+            "suj-tip-to-tool-origin": {
+                "Translation": [0.4864, 0.0000, 0.1524],
+                "Rotation" : [[ 0.0000, 1.0000,  0.0000],
+                              [ -1.0000,  0.0000,  0.0000],
+                              [ 0.0000,  0.0000,  1.0000]]
+            }
+        }
+        ,
+        {
+            "name": "PSM3",
+            "type": "Motorized PSM",
+            "plug-number": 4,
+            "serial-number": "SE054271",
+            "brake-release-current": 2.2,
+            "primary-offsets": [ 0.09598, -2.391, 3.0666, -3.0979, -3.1385, -3.0405],
+            "primary-scales": [ 0.00026177, 0.0010659, -0.0013738, 0.0013823, 0.0014088, 0.0013531],
+            "secondary-offsets": [ 0.09598, -2.391, 3.0666, -3.0979, -3.1385, -3.0405],
+            "secondary-scales": [ 0.0002567, 0.001069, -0.0013761, 0.0013738, 0.0014095, 0.0013568],
+            "DH": {
+                "links": [
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.0896, "theta": 0.0000, "D": 0.0000,
+                        "type": "prismatic",
+                        "mode": "active",
+                        "offset": 0.00
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.0000, "theta": 0.0000, "D": 0.3404,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.0
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.5842, "theta": 0.0000, "D": 0.1429,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.00
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 0.0000, "A": 0.4318, "theta": 0.0000, "D": 0.2571,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 1.5708
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": 1.5708, "A": 0.0000, "theta": 0.0000, "D": 0.4089,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": 0.00
+                    },
+                    {
+                        "convention": "modified",
+                        "alpha": -1.5708, "A": 0.0000, "theta": 0.0000, "D": -0.1029,
+                        "type": "revolute",
+                        "mode": "active",
+                        "offset": -1.5708
+                    }
+                ]
+            },
+            "world-origin-to-suj": {
+                "Translation": [0.0000 , 0.0000, 0.1264],
+                "Rotation" : [[ 0.0000, -1.0000,  0.0000],
+                              [ 1.0000,  0.0000,  0.0000],
+                              [ 0.0000,  0.0000,  1.0000]]
+            },
+            "suj-tip-to-tool-origin": {
+                "Translation": [0.4864, 0.0000, 0.1524],
+                "Rotation" : [[ 0.0000,  1.0000,  0.0000],
+                              [ -1.0000,  0.0000,  0.0000],
+                              [ 0.0000,  0.0000,  1.0000]]
+            }
+        }
+    ]
+}

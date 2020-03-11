@@ -1,0 +1,2 @@
+/usr/bin/ar qc libopenrave-md5.a  CMakeFiles/openrave-md5.dir/md5.c.o
+/usr/bin/ranlib libopenrave-md5.a

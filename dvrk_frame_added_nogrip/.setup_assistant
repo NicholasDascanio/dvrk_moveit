@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dvrk_description
+    relative_path: psm/psm_modified_frame_added.urdf
+    xacro_args: --inorder
+  SRDF:
+    relative_path: config/master.srdf
+  CONFIG:
+    author_name: nicholas dascanio
+    author_email: nicholas.dascanio95@gmail.com
+    generated_timestamp: 1581421423

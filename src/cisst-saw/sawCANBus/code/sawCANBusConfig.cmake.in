@@ -1,0 +1,6 @@
+
+set( sawCANBus_HAS_RTSocketCAN "@sawCANBus_HAS_RTSocketCAN@" )
+set( sawCANBus_INCLUDE_DIR "@sawCANBus_INCLUDE_DIR@" )
+set( sawCANBus_LIBRARY_DIR "@sawCANBus_LIBRARY_DIR@" )
+set( sawCANBus_LIBRARIES   "@sawCANBus_LIBRARIES@" )
+set( sawCANBus_DEFINITIONS "@sawCANBus_DEFINITIONS@" )

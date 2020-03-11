@@ -1,0 +1,4 @@
+ ,psm_yaw_joint,psm_pitch_joint,psm_main_insertion_joint,psm_tool_roll_joint,psm_tool_pitch_joint,psm_tool_yaw_joint,psm_tool_gripper2_joint
+Positions
+0,0.20904886449881785,0.5789497082627401,0.09398104247365173,0.03531855462477131,-0.18007812259838377,0.03845742113856628,0.03854839526688241
+Velocities

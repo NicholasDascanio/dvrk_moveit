@@ -1,0 +1,514 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fc7cc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fc7cc.dir/build.make CMakeFiles/cmTC_fc7cc.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc7cc.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O3 -DNDEBUG   -o CMakeFiles/cmTC_fc7cc.dir/CheckSymbolExists.c.o   -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fc7cc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc7cc.dir/link.txt --verbose=1
+/usr/bin/cc    -O3 -DNDEBUG    CMakeFiles/cmTC_fc7cc.dir/CheckSymbolExists.c.o  -o cmTC_fc7cc -rdynamic 
+CMakeFiles/cmTC_fc7cc.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text.startup+0x6): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_fc7cc.dir/build.make:97: recipe for target 'cmTC_fc7cc' failed
+make[1]: *** [cmTC_fc7cc] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fc7cc/fast' failed
+make: *** [cmTC_fc7cc/fast] Error 2
+
+File /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1f1f9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1f1f9.dir/build.make CMakeFiles/cmTC_1f1f9.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1f1f9.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -O3 -DNDEBUG   -o CMakeFiles/cmTC_1f1f9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1f1f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f1f9.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -O3 -DNDEBUG    CMakeFiles/cmTC_1f1f9.dir/CheckFunctionExists.c.o  -o cmTC_1f1f9 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1f1f9.dir/build.make:97: recipe for target 'cmTC_1f1f9' failed
+make[1]: *** [cmTC_1f1f9] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1f1f9/fast' failed
+make: *** [cmTC_1f1f9/fast] Error 2
+
+
+Determining if the function crlibm_init exists in the crlibm failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cde71/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cde71.dir/build.make CMakeFiles/cmTC_cde71.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cde71.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=crlibm_init -O3 -DNDEBUG   -o CMakeFiles/cmTC_cde71.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cde71
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cde71.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=crlibm_init -O3 -DNDEBUG    CMakeFiles/cmTC_cde71.dir/CheckFunctionExists.c.o  -o cmTC_cde71 -rdynamic -lcrlibm 
+/usr/bin/ld: cannot find -lcrlibm
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cde71.dir/build.make:97: recipe for target 'cmTC_cde71' failed
+make[1]: *** [cmTC_cde71] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cde71/fast' failed
+make: *** [cmTC_cde71/fast] Error 2
+
+
+Determining if the include file crlibm.h exists failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1d635/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1d635.dir/build.make CMakeFiles/cmTC_1d635.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d635.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -O3 -DNDEBUG   -o CMakeFiles/cmTC_1d635.dir/CheckIncludeFile.c.o   -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: crlibm.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_1d635.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1d635.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_1d635.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1d635/fast' failed
+make: *** [cmTC_1d635/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test IS_ASSIMP_PRE_R896 failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e4652/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e4652.dir/build.make CMakeFiles/cmTC_e4652.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e4652.dir/src.cxx.o
+/usr/bin/c++     -DIS_ASSIMP_PRE_R896 -O3 -DNDEBUG   -o CMakeFiles/cmTC_e4652.dir/src.cxx.o -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx:2:30: fatal error: assimp/Logger.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_e4652.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_e4652.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_e4652.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e4652/fast' failed
+make: *** [cmTC_e4652/fast] Error 2
+
+Source file was:
+ 
+  #include <assimp/Logger.h> 
+  int main() 
+  { 
+      Assimp::Logger::WARN; 
+      return 0; 
+  }
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_deafc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_deafc.dir/build.make CMakeFiles/cmTC_deafc.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_deafc.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4  -O3 -DNDEBUG   -o CMakeFiles/cmTC_deafc.dir/CheckSymbolExists.cxx.o -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+CMakeFiles/cmTC_deafc.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_deafc.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_deafc.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_deafc/fast' failed
+make: *** [cmTC_deafc/fast] Error 2
+
+File /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_77348/fast"
+/usr/bin/make -f CMakeFiles/cmTC_77348.dir/build.make CMakeFiles/cmTC_77348.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_77348.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4  -O3 -DNDEBUG   -o CMakeFiles/cmTC_77348.dir/CheckSymbolExists.cxx.o -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+CMakeFiles/cmTC_77348.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_77348.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_77348.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_77348/fast' failed
+make: *** [cmTC_77348/fast] Error 2
+
+File /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2695f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2695f.dir/build.make CMakeFiles/cmTC_2695f.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2695f.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4  -O3 -DNDEBUG   -o CMakeFiles/cmTC_2695f.dir/CheckSymbolExists.cxx.o -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+CMakeFiles/cmTC_2695f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2695f.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_2695f.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2695f/fast' failed
+make: *** [cmTC_2695f/fast] Error 2
+
+File /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function _Z8annClosev exists in the ANN failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4e177/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4e177.dir/build.make CMakeFiles/cmTC_4e177.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e177.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=_Z8annClosev -O3 -DNDEBUG   -o CMakeFiles/cmTC_4e177.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4e177
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e177.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_Z8annClosev -O3 -DNDEBUG    CMakeFiles/cmTC_4e177.dir/CheckFunctionExists.c.o  -o cmTC_4e177 -rdynamic -lANN 
+/usr/bin/ld: cannot find -lANN
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4e177.dir/build.make:97: recipe for target 'cmTC_4e177' failed
+make[1]: *** [cmTC_4e177] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4e177/fast' failed
+make: *** [cmTC_4e177/fast] Error 2
+
+
+Determining if the function annClose exists in the ANN failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0745d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0745d.dir/build.make CMakeFiles/cmTC_0745d.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0745d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=annClose -O3 -DNDEBUG   -o CMakeFiles/cmTC_0745d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0745d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0745d.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=annClose -O3 -DNDEBUG    CMakeFiles/cmTC_0745d.dir/CheckFunctionExists.c.o  -o cmTC_0745d -rdynamic -lANN 
+/usr/bin/ld: cannot find -lANN
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0745d.dir/build.make:97: recipe for target 'cmTC_0745d' failed
+make[1]: *** [cmTC_0745d] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0745d/fast' failed
+make: *** [cmTC_0745d/fast] Error 2
+
+
+Determining if the function asinh exists failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cbe0d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cbe0d.dir/build.make CMakeFiles/cmTC_cbe0d.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbe0d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=asinh -O3 -DNDEBUG   -o CMakeFiles/cmTC_cbe0d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘asinh’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_cbe0d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbe0d.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=asinh -O3 -DNDEBUG    CMakeFiles/cmTC_cbe0d.dir/CheckFunctionExists.c.o  -o cmTC_cbe0d -rdynamic 
+CMakeFiles/cmTC_cbe0d.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text.startup+0xe): undefined reference to `asinh'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cbe0d.dir/build.make:97: recipe for target 'cmTC_cbe0d' failed
+make[1]: *** [cmTC_cbe0d] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cbe0d/fast' failed
+make: *** [cmTC_cbe0d/fast] Error 2
+
+
+Determining if the function acosh exists failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_279ec/fast"
+/usr/bin/make -f CMakeFiles/cmTC_279ec.dir/build.make CMakeFiles/cmTC_279ec.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_279ec.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=acosh -O3 -DNDEBUG   -o CMakeFiles/cmTC_279ec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘acosh’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_279ec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_279ec.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=acosh -O3 -DNDEBUG    CMakeFiles/cmTC_279ec.dir/CheckFunctionExists.c.o  -o cmTC_279ec -rdynamic 
+CMakeFiles/cmTC_279ec.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text.startup+0xe): undefined reference to `acosh'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_279ec.dir/build.make:97: recipe for target 'cmTC_279ec' failed
+make[1]: *** [cmTC_279ec] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_279ec/fast' failed
+make: *** [cmTC_279ec/fast] Error 2
+
+
+Determining if the function atanh exists failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_24e5f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_24e5f.dir/build.make CMakeFiles/cmTC_24e5f.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24e5f.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=atanh -O3 -DNDEBUG   -o CMakeFiles/cmTC_24e5f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘atanh’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_24e5f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24e5f.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=atanh -O3 -DNDEBUG    CMakeFiles/cmTC_24e5f.dir/CheckFunctionExists.c.o  -o cmTC_24e5f -rdynamic 
+CMakeFiles/cmTC_24e5f.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text.startup+0xe): undefined reference to `atanh'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_24e5f.dir/build.make:97: recipe for target 'cmTC_24e5f' failed
+make[1]: *** [cmTC_24e5f] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_24e5f/fast' failed
+make: *** [cmTC_24e5f/fast] Error 2
+
+
+Determining if the function exp2 exists failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6fe35/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6fe35.dir/build.make CMakeFiles/cmTC_6fe35.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6fe35.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=exp2 -O3 -DNDEBUG   -o CMakeFiles/cmTC_6fe35.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘exp2’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_6fe35
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fe35.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=exp2 -O3 -DNDEBUG    CMakeFiles/cmTC_6fe35.dir/CheckFunctionExists.c.o  -o cmTC_6fe35 -rdynamic 
+CMakeFiles/cmTC_6fe35.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text.startup+0xe): undefined reference to `exp2'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6fe35.dir/build.make:97: recipe for target 'cmTC_6fe35' failed
+make[1]: *** [cmTC_6fe35] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6fe35/fast' failed
+make: *** [cmTC_6fe35/fast] Error 2
+
+
+Determining if the function log2 exists failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_54ed9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_54ed9.dir/build.make CMakeFiles/cmTC_54ed9.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_54ed9.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=log2 -O3 -DNDEBUG   -o CMakeFiles/cmTC_54ed9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘log2’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_54ed9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54ed9.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=log2 -O3 -DNDEBUG    CMakeFiles/cmTC_54ed9.dir/CheckFunctionExists.c.o  -o cmTC_54ed9 -rdynamic 
+CMakeFiles/cmTC_54ed9.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text.startup+0xe): undefined reference to `log2'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_54ed9.dir/build.make:97: recipe for target 'cmTC_54ed9' failed
+make[1]: *** [cmTC_54ed9] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_54ed9/fast' failed
+make: *** [cmTC_54ed9/fast] Error 2
+
+
+Determining if the include file ffmpeg/avformat.h exists failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a17c6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a17c6.dir/build.make CMakeFiles/cmTC_a17c6.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a17c6.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -I/usr/include/x86_64-linux-gnu  -O3 -DNDEBUG   -o CMakeFiles/cmTC_a17c6.dir/CheckIncludeFile.c.o   -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:29: fatal error: ffmpeg/avformat.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_a17c6.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a17c6.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a17c6.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a17c6/fast' failed
+make: *** [cmTC_a17c6/fast] Error 2
+
+
+Determining if the include file ffmpeg/avcodec.h exists failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9f480/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9f480.dir/build.make CMakeFiles/cmTC_9f480.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f480.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -I/usr/include/x86_64-linux-gnu  -O3 -DNDEBUG   -o CMakeFiles/cmTC_9f480.dir/CheckIncludeFile.c.o   -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: ffmpeg/avcodec.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_9f480.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9f480.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_9f480.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9f480/fast' failed
+make: *** [cmTC_9f480/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test NEED_TRIINDEX failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_31ead/fast"
+/usr/bin/make -f CMakeFiles/cmTC_31ead.dir/build.make CMakeFiles/cmTC_31ead.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_31ead.dir/src.cxx.o
+/usr/bin/c++     -DNEED_TRIINDEX  -L/usr/lib/x86_64-linux-gnu -O3 -DNDEBUG   -o CMakeFiles/cmTC_31ead.dir/src.cxx.o -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx:4:17: error: conflicting declaration ‘typedef int dTriIndex’
+     typedef int dTriIndex;
+                 ^
+In file included from /usr/include/ode/ode.h:30:0,
+                 from /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx:2:
+/usr/include/ode/common.h:85:17: note: previous declaration as ‘typedef duint32 dTriIndex’
+ typedef duint32 dTriIndex;
+                 ^
+CMakeFiles/cmTC_31ead.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_31ead.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_31ead.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_31ead/fast' failed
+make: *** [cmTC_31ead/fast] Error 2
+
+Source file was:
+
+    #include <ode/ode.h>
+
+    typedef int dTriIndex;
+    int main()
+    {
+      return 0;
+    }
+Performing C++ SOURCE FILE Test FCL_HAS_REPLACEOBJECT failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a0e7f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a0e7f.dir/build.make CMakeFiles/cmTC_a0e7f.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a0e7f.dir/src.cxx.o
+/usr/bin/c++    -I/usr/local/include  -DFCL_HAS_REPLACEOBJECT -DOPENRAVE_DLL  -fPIC -DOPENRAVE_HAS_LAPACK -std=c++11 -std=c++11  -L/usr/local/lib -O3 -DNDEBUG   -o CMakeFiles/cmTC_a0e7f.dir/src.cxx.o -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx:6:15: error: ‘class fcl::NaiveCollisionManager’ has no member named ‘replaceObject’
+       manager.replaceObject(nullptr, nullptr, false);
+               ^
+CMakeFiles/cmTC_a0e7f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a0e7f.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a0e7f.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a0e7f/fast' failed
+make: *** [cmTC_a0e7f/fast] Error 2
+
+Source file was:
+
+    #include <fcl/broadphase/broadphase.h>
+
+    int main() {
+      fcl::NaiveCollisionManager manager;
+      manager.replaceObject(nullptr, nullptr, false);
+      return 0;
+    }
+Performing C++ SOURCE FILE Test FCL_SUPPORT_BULK_UPDATE failed with the following output:
+Change Dir: /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a9754/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a9754.dir/build.make CMakeFiles/cmTC_a9754.dir/build
+make[1]: Entering directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a9754.dir/src.cxx.o
+/usr/bin/c++    -I/usr/local/include  -DFCL_SUPPORT_BULK_UPDATE -DOPENRAVE_DLL  -fPIC -DOPENRAVE_HAS_LAPACK -std=c++11 -std=c++11  -L/usr/local/lib -O3 -DNDEBUG   -o CMakeFiles/cmTC_a9754.dir/src.cxx.o -c /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx:7:30: error: no matching function for call to ‘fcl::DynamicAABBTreeCollisionManager::update(std::vector<fcl::CollisionObject*>&, bool)’
+       manager.update(v, false);
+                              ^
+In file included from /usr/local/include/fcl/broadphase/broadphase.h:238:0,
+                 from /home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp/src.cxx:2:
+/usr/local/include/fcl/broadphase/broadphase_dynamic_AABB_tree.h:98:8: note: candidate: virtual void fcl::DynamicAABBTreeCollisionManager::update()
+   void update();
+        ^
+/usr/local/include/fcl/broadphase/broadphase_dynamic_AABB_tree.h:98:8: note:   candidate expects 0 arguments, 2 provided
+/usr/local/include/fcl/broadphase/broadphase_dynamic_AABB_tree.h:101:8: note: candidate: virtual void fcl::DynamicAABBTreeCollisionManager::update(fcl::CollisionObject*)
+   void update(CollisionObject* updated_obj);
+        ^
+/usr/local/include/fcl/broadphase/broadphase_dynamic_AABB_tree.h:101:8: note:   candidate expects 1 argument, 2 provided
+/usr/local/include/fcl/broadphase/broadphase_dynamic_AABB_tree.h:104:8: note: candidate: virtual void fcl::DynamicAABBTreeCollisionManager::update(const std::vector<fcl::CollisionObject*>&)
+   void update(const std::vector<CollisionObject*>& updated_objs);
+        ^
+/usr/local/include/fcl/broadphase/broadphase_dynamic_AABB_tree.h:104:8: note:   candidate expects 1 argument, 2 provided
+CMakeFiles/cmTC_a9754.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a9754.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a9754.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dvrk-lite/ws_moveit_test/src/openrave/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a9754/fast' failed
+make: *** [cmTC_a9754/fast] Error 2
+
+Source file was:
+
+    #include <fcl/broadphase/broadphase.h>
+
+    int main() {
+      fcl::DynamicAABBTreeCollisionManager manager;
+      std::vector<fcl::CollisionObject*> v;
+      manager.update(v, false);
+      return 0;
+    }

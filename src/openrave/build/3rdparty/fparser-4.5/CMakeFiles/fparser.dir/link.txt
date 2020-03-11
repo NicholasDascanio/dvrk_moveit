@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfparser.a  CMakeFiles/fparser.dir/fparser.cc.o CMakeFiles/fparser.dir/mpfr/MpfrFloat.cc.o CMakeFiles/fparser.dir/mpfr/GmpInt.cc.o
+/usr/bin/ranlib libfparser.a

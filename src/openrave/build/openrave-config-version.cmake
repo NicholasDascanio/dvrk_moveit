@@ -1,0 +1,13 @@
+set( PACKAGE_VERSION "0.9.0" )
+if( "${PACKAGE_FIND_VERSION}" VERSION_EQUAL "0.9.0")
+  set(PACKAGE_VERSION_EXACT 1)
+endif()
+if( "${PACKAGE_FIND_VERSION_MAJOR}.${PACKAGE_FIND_VERSION_MINOR}" EQUAL "0.9" )
+  set(PACKAGE_VERSION_COMPATIBLE 1)
+endif()
+if( "${PACKAGE_FIND_VERSION_MAJOR}" EQUAL "0" )
+  if( "${PACKAGE_FIND_VERSION_MINOR}" EQUAL 0 )
+    # user has not specified a minor version, so return compatible
+    set(PACKAGE_VERSION_COMPATIBLE 1)
+  endif()
+endif()

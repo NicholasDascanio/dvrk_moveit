@@ -1,0 +1,23 @@
+aggiunto a riga 149 di arm.py, pero forse devi aggiungerlo ad psm.py perche alla fine e un oggetto di quel tipo
+        self.__set_base_frame_pub = rospy.Publisher(self.__full_ros_namespace
+                                                           + '/set_base_frame',
+                                                           Pose, latch = True, queue_size = 1)
+poi ho aggiunto il publisher, riga 180
+
+poi ho aggiunto alla riga 340 di arm.py la funzione
+
+    def __set_base_frame(self, htrasf):
+        tras=htrasf[0:3,3]
+        quat=transformations.quaternion_from_matrix(htrasf)
+        self.geometry_msgs_Pose.position.X = tras[0]
+        self.geometry_msgs_Pose.position.Y = tras[1]
+        self.geometry_msgs_Pose.position.Z = tras[2]
+        self.geometry_msgs_Pose.orientation.X = quat[1]
+        self.geometry_msgs_Pose.orientation.Y = quat[2]
+        self.geometry_msgs_Pose.orientation.Z = quat[3]
+        self.geometry_msgs_Pose.orientation.W = quat[0]
+        self.__set_base_frame_pub.publish(geometry_msgs_Pose)
+
+
+
+http://folk.uio.no/inf3330/scripting/doc/python/SciPy/tutorial/old/node22.html guarda qui per la traiettoria

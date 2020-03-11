@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library path="lib/libpsm_modified_for_collada_psm1_arm_moveit_ikfast_plugin">
+  <class base_class_type="kinematics::KinematicsBase" name="psm_modified_for_collada_psm1_arm/IKFastKinematicsPlugin" type="psm_modified_for_collada_psm1_arm::IKFastKinematicsPlugin">
+    <description>IKFast61 plugin for closed-form kinematics of psm_modified_for_collada psm1_arm</description>
+  </class>
+</library>

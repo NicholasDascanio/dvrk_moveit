@@ -1,0 +1,95 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0109 
+header_name {.h} 
+code_name {.cxx}
+class UI {open
+} {
+  Function {UI()} {open
+  } {
+    Fl_Window DisplayWindow {
+      label SpaceNavigator
+      user_data this
+      callback CloseWindow_CB open
+      xywh {89 344 470 144} type Double box PLASTIC_DOWN_BOX color 2 labelcolor 80 visible
+    } {
+      Fl_Button {} {
+        label Close
+        callback {DoClose=true;}
+        xywh {395 5 60 30} box PLASTIC_UP_BOX
+      }
+      Fl_Group {} {open
+        xywh {25 35 490 200}
+      } {
+        Fl_Value_Output {AnalogInput[0]} {
+          label x
+          xywh {29 60 95 25} box PLASTIC_THIN_UP_BOX color 174 labelfont 1 minimum -1e+006 maximum 1e+006
+        }
+        Fl_Value_Output {AnalogInput[1]} {
+          label y
+          xywh {156 59 95 25} box PLASTIC_THIN_UP_BOX color 174 labelfont 1 minimum -1e+006 maximum 1e+006
+        }
+        Fl_Value_Output {AnalogInput[2]} {
+          label z
+          xywh {275 59 95 25} box PLASTIC_THIN_UP_BOX color 174 labelfont 1 minimum -1e+006 maximum 1e+006
+        }
+        Fl_Value_Output {AnalogInput[3]} {
+          label x
+          xywh {29 95 95 25} box PLASTIC_THIN_UP_BOX color 174 labelfont 1 minimum -1e+006 maximum 1e+006
+        }
+        Fl_Value_Output {AnalogInput[4]} {
+          label y
+          xywh {155 95 95 25} box PLASTIC_THIN_UP_BOX color 174 labelfont 1 minimum -1e+006 maximum 1e+006
+        }
+        Fl_Value_Output {AnalogInput[5]} {
+          label z
+          xywh {275 95 95 25} box PLASTIC_THIN_UP_BOX color 174 labelfont 1 minimum -1e+006 maximum 1e+006
+        }
+      }
+      Fl_Group {} {open
+        xywh {370 46 90 84}
+      } {
+        Fl_Box {} {
+          label Digital
+          xywh {370 49 85 11} labelsize 12
+        }
+        Fl_Round_Button {DigitaInput[0]} {selected
+          xywh {400 59 25 30} down_box PLASTIC_ROUND_DOWN_BOX color 1 selection_color 2 labelsize 21 align 4 deactivate
+        }
+        Fl_Round_Button {DigitaInput[1]} {
+          xywh {400 95 25 30} down_box PLASTIC_ROUND_DOWN_BOX color 1 selection_color 2 labelsize 21 align 4 deactivate
+        }
+      }
+      Fl_Box NameBox {
+        label {Name:}
+        xywh {11 8 160 25} box PLASTIC_THIN_DOWN_BOX color 140 labelsize 12 align 20
+      }
+      Fl_Box {} {
+        label Translation
+        xywh {10 40 85 30} labelsize 12
+      }
+      Fl_Box {} {
+        label Rotation
+        xywh {7 117 85 30} labelsize 12
+      }
+    }
+    code {//set default values
+SetAnalogOutClicked=false;
+SetDigitalOutputClicked[0]=false;
+SetDigitalOutputClicked[1]=false;
+SetDigitalOutputClicked[2]=false;
+SetDigitalOutputClicked[3]=false;} {}
+  }
+  decl {bool DoClose;} {public
+  }
+  decl {bool SetAnalogOutClicked;} {public
+  }
+  decl {bool SetDigitalOutputClicked[4];} {public
+  }
+  Function {CloseWindow_CB(Fl_Widget*, void *caller)} {open return_type {static void}
+  } {
+    code {//a little hack in order to not use static members
+//the window will send the this pointer(this class) as the caller
+//
+((UI*)caller)->DoClose=true;} {}
+  }
+} 

@@ -1,0 +1,152 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0110 
+header_name {.h} 
+code_name {.cxx}
+class DigitizerExampleUI {open
+} {
+  Function {DigitizerExampleUI()} {open
+  } {
+    Fl_Window DisplayWindow {
+      label {cisst - Immersion MicroScribe Digitizer Test Tool} open selected
+      xywh {558 197 537 573} type Double box GTK_UP_BOX color 53 selection_color 51 align 80 resizable visible
+    } {
+      Fl_Return_Button Close {
+        label Close
+        callback {DisplayWindow->hide(); Opened = false;}
+        xywh {10 530 520 35} box GTK_UP_BOX color 7 labelfont 9
+      }
+      Fl_Text_Display Log {
+        xywh {10 345 520 180} labelfont 13 labelsize 10 align 5 textfont 4 textsize 11
+      }
+      Fl_Group {} {
+        label {Joint Angles} open
+        xywh {10 151 200 189} box GTK_UP_BOX color 51 selection_color 60 labelfont 9 align 17
+      } {
+        Fl_Value_Output J1 {
+          label {Shoulder Yaw (J1) :}
+          xywh {130 178 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output J2 {
+          label {Shoulder Pitch (J2) :}
+          xywh {130 203 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output J3 {
+          label {Elbow (J3) :}
+          xywh {130 228 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output J4 {
+          label {Wrist Roll (J4) :}
+          xywh {130 253 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output J5 {
+          label {Wrist Pitch (J5) :}
+          xywh {130 278 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output J6 {
+          label {Stylus Roll (J6) :}
+          xywh {130 303 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+      }
+      Fl_Group {} {
+        label {Digitizer Information} open
+        xywh {10 7 520 138} box GTK_UP_BOX color 51 selection_color 60 labelfont 9 align 17
+      } {
+        Fl_Text_Display ProductName {
+          label {Product Name: }
+          xywh {135 35 95 25} box PLASTIC_THIN_DOWN_BOX color 53 labelsize 12 align 4 textfont 4 textsize 12
+        }
+        Fl_Text_Display ModelName {
+          label {Model Name: }
+          xywh {135 60 95 25} box PLASTIC_THIN_DOWN_BOX color 53 labelsize 12 align 4 textfont 4 textsize 12
+        }
+        Fl_Text_Display SerialNumber {
+          label {Serial Number: }
+          xywh {135 85 95 25} box PLASTIC_THIN_DOWN_BOX color 53 labelsize 12 align 4 textfont 4 textsize 12
+        }
+        Fl_Value_Output DoF {
+          label {DoF :}
+          xywh {135 110 95 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Text_Display DLLVersion {
+          label {DLL Version: }
+          xywh {390 35 95 25} box PLASTIC_THIN_DOWN_BOX color 53 labelsize 12 align 4 textfont 4 textsize 12
+        }
+        Fl_Text_Display FirmwareVersion {
+          label {Firmware Version: }
+          xywh {390 60 95 25} box PLASTIC_THIN_DOWN_BOX color 53 labelsize 12 align 4 textfont 4 textsize 12
+        }
+        Fl_Text_Display ConnectionStatus {
+          label {Connection Status: }
+          xywh {390 110 95 25} box PLASTIC_THIN_DOWN_BOX color 53 labelsize 12 align 4 textfont 4 textsize 12
+        }
+        Fl_Text_Display Protocol {
+          label {Protocol: }
+          xywh {390 85 95 25} box PLASTIC_THIN_DOWN_BOX color 53 labelsize 12 align 4 textfont 4 textsize 12
+        }
+      }
+      Fl_Group {} {
+        label {Stylus Position and Orientation} open
+        xywh {215 151 315 113} box GTK_UP_BOX color 51 selection_color 60 labelfont 9 align 17
+      } {
+        Fl_Value_Output X {
+          label {X :}
+          xywh {245 176 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output Y {
+          label {Y :}
+          xywh {245 201 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output Roll {
+          label {Roll: }
+          xywh {355 176 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output Pitch {
+          label {Pitch: }
+          xywh {355 201 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output Z {
+          label {Z :}
+          xywh {245 226 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output Yaw {
+          label {Yaw: }
+          xywh {355 226 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output Ux {
+          label {u_x: }
+          xywh {455 175 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output Uy {
+          label {u_y: }
+          xywh {455 200 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Value_Output Uz {
+          label {u_z: }
+          xywh {455 225 65 25} box PLASTIC_THIN_DOWN_BOX color 7 labelsize 12 textfont 4 textsize 12
+        }
+      }
+      Fl_Group {} {
+        label {Button Status} open
+        xywh {215 267 315 74} box GTK_UP_BOX color 51 selection_color 60 labelfont 9 align 17
+      } {
+        Fl_Progress Button1 {
+          label {Button 1: }
+          xywh {320 290 50 40} box BORDER_BOX selection_color 4 labelsize 12 align 4
+        }
+        Fl_Progress Button2 {
+          label {: Button 2}
+          xywh {375 290 50 40} box BORDER_BOX selection_color 1 labelsize 12 align 8
+        }
+      }
+    }
+  }
+  Function {show(int argc, char**argv)} {open
+  } {
+    code {DisplayWindow->show();} {}
+    code {Opened = true;} {}
+  }
+  decl {bool Opened;} {public
+  }
+  decl {bool ButtonRefreshClicked;} {public
+  }
+} 

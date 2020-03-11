@@ -1,0 +1,8 @@
+-I/home/dvrk-lite/ws_moveit_test/src/OpenSceneGraph/include
+-I/home/dvrk-lite/ws_moveit_test/src/OpenSceneGraph/build/include
+-I/usr/include
+-DOSGQT_LIBRARY
+-f
+-o
+/home/dvrk-lite/ws_moveit_test/src/OpenSceneGraph/build/src/osgQt/__/__/include/osgQt/moc_QGraphicsViewAdapter.cxx
+/home/dvrk-lite/ws_moveit_test/src/OpenSceneGraph/include/osgQt/QGraphicsViewAdapter

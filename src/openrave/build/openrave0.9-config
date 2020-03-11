@@ -1,0 +1,93 @@
+#!/bin/sh
+
+prefix=/usr/local
+exec_prefix=/usr/local
+exec_prefix_set=no
+
+usage="\
+Usage: openrave-config [--prefix[=DIR]] [--exec-prefix[=DIR]] [--version] [--cflags] [--libs] [--libs-core] [--libs-only-l] [--libs-only-L] [--cflags-only-I] [--shared-libs] [--python-dir] [--octave-dir] [--matlab-dir] [--share-dir] [--usage | --help]"
+
+if test $# -eq 0; then
+      exit 1
+fi
+
+while test $# -gt 0; do
+  case "$1" in
+  -*=*) optarg=`echo "$1" | sed 's/[-_a-zA-Z0-9]*=//'` ;;
+  *) optarg= ;;
+  esac
+
+  case $1 in
+    --prefix=*)
+      prefix=$optarg
+      if test $exec_prefix_set = no ; then
+        exec_prefix=$optarg
+      fi
+      ;;
+    --prefix)
+      echo $prefix
+      ;;
+    --exec-prefix=*)
+      exec_prefix=$optarg
+      exec_prefix_set=yes
+      ;;
+    --exec-prefix)
+      echo $exec_prefix
+      ;;
+    --version)
+      echo 0.9.0
+      ;;
+    --cflags)
+      echo  -I/usr/local/include/openrave-0.9  -I/usr/include -I/usr/include -DOPENRAVE_DLL -DOPENRAVE_CORE_DLL 
+      ;;
+    --cppflags)
+      echo  -I/usr/local/include/openrave-0.9  -I/usr/include -I/usr/include -DOPENRAVE_DLL -DOPENRAVE_CORE_DLL 
+      ;;
+    --cflags-only-I)
+      echo -I/usr/local/include/openrave-0.9  -I/usr/include -I/usr/include
+      ;;
+    --libs)
+      echo -L/usr/local/lib -lopenrave0.9  -L/usr/lib/x86_64-linux-gnu -l/usr/lib/x86_64-linux-gnu/libboost_thread.so -L/usr/lib/x86_64-linux-gnu -llog4cxx
+      ;;
+    --libs-core)
+      echo -L/usr/local/lib -lopenrave0.9 -lopenrave0.9-core  -L/usr/lib/x86_64-linux-gnu -l/usr/lib/x86_64-linux-gnu/libboost_thread.so -L/usr/lib/x86_64-linux-gnu -llog4cxx
+      ;;
+    --libs-only-l)
+      echo -lopenrave0.9 -l/usr/lib/x86_64-linux-gnu/libboost_thread.so -llog4cxx
+      ;;
+    --libs-only-L)
+      echo -L/usr/local/lib  -L/usr/lib/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu
+      ;;
+    --shared-libs)
+      echo -L/usr/local/lib -lopenrave0.9  -L/usr/lib/x86_64-linux-gnu -l/usr/lib/x86_64-linux-gnu/libboost_thread.so -L/usr/lib/x86_64-linux-gnu -llog4cxx
+      ;;
+    --python-dir)
+      echo /usr/local/lib/python2.7/dist-packages
+      ;;
+    --octave-dir)
+      echo /usr/local/share/openrave-0.9/octave
+      ;;
+    --matlab-dir)
+      echo /usr/local/share/openrave-0.9/matlab
+      ;;
+    --share-dir)
+      echo /usr/local/share/openrave-0.9
+      ;;
+    --plugins-dir)
+      echo /usr/local/lib/openrave0.9-plugins
+      ;;
+    --usage)
+      echo "${usage}"
+      exit 0
+      ;;
+    --help)
+      echo "${usage}"
+      exit 0
+      ;;
+    *)
+      echo "${usage}" 1>&2
+      exit 1
+      ;;
+  esac
+  shift
+done

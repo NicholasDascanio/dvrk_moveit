@@ -1,0 +1,9 @@
+#
+# $Id$
+#
+# (C) Copyright 2011 Johns Hopkins University (JHU), All Rights Reserved.
+#
+
+set (sawGLUTSimulator_INCLUDE_DIR "@sawGLUTSimulator_INCLUDE_DIR@")
+set (sawGLUTSimulator_LIBRARY_DIR "@sawGLUTSimulator_LIBRARY_DIR@")
+set (sawGLUTSimulator_LIBRARIES   "@sawGLUTSimulator_LIBRARIES@")

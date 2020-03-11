@@ -1,0 +1,27 @@
+M- osaThread::CreateInternal: create thread named: Unnamed
+M- osaThread::CreateInternal: create thread named: Unnamed
+M- Class mtsIntuitiveResearchKitConsole: Configure: console using file "ul-daVinci/console-PSM2.json"
+----> content of configuration file: 
+/* -*- Mode: Javascript; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
+{
+	"arms" : 
+	[
+		{
+			"io" : "xml/sawRobotIO1394-PSM2-32529.xml-new",
+			"kinematic" : "psm-large-needle-driver.json",
+			"name" : "PSM2",
+			"pid" : "sawControllersPID-PSM.xml",
+			"type" : "PSM"
+		}
+	]
+}
+<----
+M- Class mtsIntuitiveResearchKitConsole: Configure: using default io:period, io:port, io:firewire-protocol and io:watchdog-timeout
+M- Class mtsIntuitiveResearchKitConsole: Configure:
+     - Period IO is 0.0003
+     - FireWire port is 0
+     - Protocol is 1
+     - Watchdog timeout is 0.03
+-W Class cmnPath: Couldn't find file "xml/sawRobotIO1394-PSM2-32529.xml-new" in path /home/dvrk-lite/ws_moveit_test/src/cisst-saw/sawIntuitiveResearchKit/share;/home/dvrk-lite/ws_moveit_test/src/cisst-saw/sawIntuitiveResearchKit/share/ul-daVinci;/home/dvrk-lite/ws_moveit_test/src/cisst-saw/sawIntuitiveResearchKit/components/../share;/home/dvrk-lite/ws_moveit_test/src/cisst-saw/sawIntuitiveResearchKit/components/../share/io
+E- Class mtsIntuitiveResearchKitConsole: File: mtsIntuitiveResearchKitConsole.cpp Line: 1352 -  ConfigureArmJSON: can't find IO file xml/sawRobotIO1394-PSM2-32529.xml-new
+E- Class mtsIntuitiveResearchKitConsole: File: mtsIntuitiveResearchKitConsole.cpp Line: 700 -  Configure: failed to configure arms[0]
